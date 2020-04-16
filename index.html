@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color:lightblue;
+            }
+
+            input[type="text"]
+            {
+                font-size:12px;
+            }
+            button{
+                background-color: lightgreen;
+
+            }
+                .flex-container {
+                display: flex;
+                background-color: DodgerBlue;
+                }
+
+                .flex-container > div {
+                background-color: #f1f1f1;
+                margin: 10px;
+                padding: 20px;
+                font-size: 30px;
+                flex: 1;
+                }
+        </style>
+        <script src="ind.js">
+                
+        </script>
+        <title>Single page app for ISS</title>
+    </head>
+    <body>
+        <h1 id="spa">Single page app for ISS</h1>
+        <div class="flex-container">
+            <div><button id="location">Get current location</button>
+                <br><br>
+                <p1 id="long" style="color: indigo; font-size: large;"></p1><br><br>
+                <p1 id="lat" style="color: indigo; font-size: large;"></p1><br><br>
+                <p1 id="time" style="color: indigo; font-size: large;"></p1><br><br>
+            </div>
+            <div><p style="font-size: medium; background-color: lightgreen;" id="pass">Enter Latitude and Longitude to get pass time for a location</p>
+                <form name="frm1">
+                    <label for="fname" style="font-size: large;">Latitude</label>
+                    <input type="number" name="fname"><br>
+                    <label for="lname" style="font-size: large;">Longitude</label>
+                    <input type="number" name="lname"><br><br>
+                    <input style="background-color: lightsalmon;"  type="button" onclick="myFunc()" value="Submit">
+                </form>
+                <br>
+                <p1 id="dur" style="color: indigo; font-size: large;"></p1><br><br>
+            </div>
+            <div><button id="people">People in ISS</button>
+                <br><br>                
+                <p1 id="tot" style="color: indigo; font-size: large;"></p1><br><br>
+                <p1 id="pplin" style="color: indigo; font-size: large;"></p1><br><br>
+            </div>
+        </div>
+        
+
+        
+    </body>
+</html>
